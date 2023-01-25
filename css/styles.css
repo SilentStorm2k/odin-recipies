@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    background-color: greenyellow;
+    color: darkgreen;
+}
+.linkList {
+    text-align: start;
+    background-color: lightgreen;
+    color: aquamarine;
+}
