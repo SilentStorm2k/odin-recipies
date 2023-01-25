@@ -3,6 +3,12 @@ h1 {
     background-color: greenyellow;
     color: darkgreen;
 }
+.image {
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .linkList {
     text-align: start;
     background-color: lightgreen;
