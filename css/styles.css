@@ -1,16 +1,47 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
 h1 {
     text-align: center;
     background-color: greenyellow;
     color: darkgreen;
 }
 .image {
-    width: 450px;
+    height: 350px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 .linkList {
-    text-align: start;
+    text-align: left;
     background-color: lightgreen;
-    color: aquamarine;
+    color: blueviolet;
+}
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.unblur {
+    filter: blur(-8px);
+    -webkit-filter: blur(-8px);
+}
+
+.bgAglio {
+    background-image: url("../images/Spaghetti-4-1157x1536.jpg");
+    background-color: rgb(154, 213, 52);
+    background-blend-mode: darken;
+    color: black;
+
+    /* Add blur effect */
+    /*filter: blur(8px);
+    -webkit-filter: blur(8px);*/
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
