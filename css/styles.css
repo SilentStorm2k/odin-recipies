@@ -4,6 +4,54 @@ html {
     margin: 0;
 }
 
+.landingPage {
+    height: 100%;
+    background-image: url("../images/8-mHeqfLU7HdNrxgM.png");
+    background-size: cover;
+    position: relative;
+    /* filter: blur(3px); */
+
+}
+
+.landingPage div {
+    position: absolute;
+}
+
+.recipe {
+    display: inline-block;
+    margin: 10px;
+}
+
+.top {
+    top: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.lp {
+    height: 300px;
+    width: 300px;
+    filter: blur(3px);
+    display: inline-block;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #000000;
+}
+
+.lp:hover {
+    filter: blur(0px);
+}
+
 .bg {
     filter: blur(8px);
     height: 200%;
@@ -32,8 +80,48 @@ html {
 
 h1 {
     text-align: center;
-    background-color: greenyellow;
-    color: darkgreen;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animate {
+    color: brown;
+    animation: anim 4s ease-in-out infinite;
+}
+
+@keyframes anim {
+    0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
 }
 
 .image {
@@ -41,6 +129,7 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin: auto;
 }
 
 .linkList {
@@ -49,11 +138,12 @@ h1 {
     color: blueviolet;
 }
 
-p, div {
+p,
+div {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.image.aboveText{
+.image.aboveText {
     position: absolute;
     top: 100%;
     left: 50%;
@@ -65,8 +155,10 @@ p, div {
     background-color: white;
     max-width: 800px;
     margin: 100px auto;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
     color: white;
     border: 3px solid #f1f1f1;
     position: absolute;
